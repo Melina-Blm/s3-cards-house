@@ -9,4 +9,6 @@
     import card from "../components/card.vue";
 
     const unObjet = { price:3000, txt:"Premiere card", nbbath:7,nom:"Card 1", img:"/public/maison1.jpg"}
+
+    
 </script>
