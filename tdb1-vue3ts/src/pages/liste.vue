@@ -13,5 +13,4 @@ import card from "../components/card.vue";
 const maisons = [{ nom: "Card 1", price: 3000, txt: "Premiere card", nbbath: 4, img: "/public/maison1.jpg" }, { nom: "Card 2", price: 4000, txt: "Deuxieme card", nbbath: 2, img: "/public/maison6.jpg" }, { nom: "Card 3", price: 5000, txt: "Troisième card", nbbath: 2, img: "/public/maison1.jpg" }]
 
 
-
 </script>

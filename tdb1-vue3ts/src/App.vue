@@ -26,6 +26,11 @@
           <h2>lien vers la Page Liste-fetch (maisons.jsons)</h2>
         </router-link>
       </li>
+      <li>
+        <router-link class="text-red-300 underline" to="/edit/new">
+          <h2>lien vers la page new</h2>
+        </router-link>
+      </li>
 
     </ul>
   </nav>
