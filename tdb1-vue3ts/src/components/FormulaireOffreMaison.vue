@@ -2,7 +2,7 @@
 import {ref} from "@vue/reactivity";
 import card from "@/components/card.vue";
 
-const maison = ref ({img:"/maison6.jpg"});
+const maison = ref ({imgMaison:"/maison6.jpg"});
 </script>
 <template>
     <div class="flex flex-row gap-10 items-center flex-wrap">
@@ -20,12 +20,12 @@ const maison = ref ({img:"/maison6.jpg"});
              
 
    
-                <FormKit name="nom" label="Nom de l'offre "/>
-                <FormKit name="price" label="Prix de l'offre" type="number"/>
+                <FormKit name="nomMaison" label="Nom de l'offre "/>
+                <FormKit name="prixMaison" label="Prix de l'offre" type="number"/>
                 <FormKit name="favoris" label="Mettre en favoris" type="checkbox" wrapper-class="flex"/>
-                <FormKit name="nbbath" label="Nombre de salle de bains" type="number"/>        
-                <FormKit name="nbsize" label="Superficie m²" type="number"/>   
-                <FormKit name="txt" label="Description"/>
+                <FormKit name="nbrSDB" label="Nombre de salle de bains" type="number"/>        
+                <FormKit name="surfaceMaison" label="Superficie m²" type="number"/>   
+                <FormKit name="adresseMaison" label="Description"/>
                  
 
                 </FormKit>

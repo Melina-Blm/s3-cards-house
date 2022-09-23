@@ -1,22 +1,22 @@
 <template>
   <figure class="m-4">
-    <img class="w-full rounded-t-lg" v-bind:src="img" alt="" />
+    <img class="w-full rounded-t-lg" v-bind:src="imgMaison" alt="" />
     <figcaption
       class="relative flex flex-col rounded-b-lg border-2 border-t-0 px-5 py-7"
     >
-      <h3 class="text-2xl text-gray-900">{{ nom }}</h3>
-      <address class="not-italic text-gray-500">{{ txt }}</address>
+      <h3 class="text-2xl text-gray-900">{{nomMaison }}</h3>
+      <address class="not-italic text-gray-500">{{ adresseMaison }}</address>
       <div class="order-first flex items-center">
         <div class="text-2xl text-indigo-500">
-          ${{ price.toLocaleString("en-US") }}
+          ${{ prixMaison.toLocaleString("en-US") }}
         </div>
         <div class="text-gray-500">/mois</div>
       </div>
       <hr class="my-2 border-t-2 border-indigo-100" />
       <div class="flex justify-between text-sm">
         <div><bed class="inline-block align-top" /> 4 Beds</div>
-        <div><bath class="inline-block align-top" /> {{ nbbath }}</div>
-        <div><size class="inline-block align-top" /> {{ nbsize }}</div>
+        <div><bath class="inline-block align-top" /> {{ nbrSDB }}</div>
+        <div><size class="inline-block align-top" /> {{ surfaceMaison }}</div>
       </div>
       <div
         class="
@@ -44,7 +44,7 @@ import bath from "./icones/bath.vue";
 import size from "./icones/size.vue";
 import heart from "./icones/hearth.vue";
 defineProps ({
-    price: {
+    prixMaison: {
       type: Number,
       default: 2700,
     },
@@ -52,24 +52,30 @@ defineProps ({
       type: Boolean,
       default: false,
     },
-    nom: {
+    nomMaison: {
       type: String,
       default: "Beverly Springfield",
     },
-    txt: {
+    adresseMaison: {
       type: String,
       default: "2821 Lake Sevilla, Palm Harbor, TX",
     },
-    img: {
+    imgMaison: {
       type: String,
+      default:"/maison1.jpg"
     },
-    nbbath: {
+    nbrSDB: {
       type: String,
       default: "2 Bathrooms",
     },
-    nbsize: {
+    surfaceMaison: {
       type: String,
       default: "6x7.5 m²",
+    },
+    nbrChambres: {
+      type:String,
+      default:"2 Beds",
+
     },
 });
 </script>
