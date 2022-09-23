@@ -1,8 +1,8 @@
 <template>
     <div class="p-2 flex">
         <h1 class="text-xl">Liste supabase</h1>
-        <div v-for="maisons in maisons" :key="maisons.nom">
-            <card class="w-96" v-bind="maisons"/>
+        <div v-for="Maison in Maison" :key="Maison.nomMaison">
+            <card class="w-96" v-bind="Maison"/>
         </div>
     </div>
     </template>

@@ -36,13 +36,18 @@
           <h2>lien vers liste supabase</h2>
         </router-link>
       </li>
+      <li>
+        <router-link class="text-red-300 underline" to="/login-logout">
+          <h2>lien vers login</h2>
+        </router-link>
+      </li>
 
     </ul>
   </nav>
 
   <!-- Affiche les pages -->
  <Suspense> <router-view class="m-2 border-2 p-2" /></Suspense>
-</template>
+</template> 
 
 <script setup lang="ts">
 import { Bars3Icon } from '@heroicons/vue/20/solid'

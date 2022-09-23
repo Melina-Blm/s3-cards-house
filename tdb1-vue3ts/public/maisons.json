@@ -4,7 +4,8 @@
         "prixMaison": 3000,
         "adresseMaison": "Premiere card",
         "imgMaison": "/public/maison1.jpg",
-        "nbrChambres": "3 Bathrooms"
+        "nbrSDB": "3 Bathrooms",
+        "nbrChambres": "3 Bedrooms"
     },
     {
         "nomMaison": "Card 2",
@@ -12,13 +13,15 @@
         "adresseMaison": "Deuxieme card ",
         "surfaceMaison": "test*2 m²",
         "imgMaison": "/public/maison6.jpg",
-        "nbrChambres": "3 Bathrooms"
+        "nbrSDB": "3 Bathrooms",
+        "nbrChambres": "3 Bedrooms"
     },
     {
         "nomMaison": "Card 3",
         "prixMaison": 5000,
         "adresseMaison": "Troisieme card",
         "imgMaison": "/public/maison1.jpg",
-        "nbrChambres": "3 Bathrooms"
+        "nbrSDB": "3 Bathrooms",
+        "nbrChambres": "3 Bedrooms"
     }
 ]
