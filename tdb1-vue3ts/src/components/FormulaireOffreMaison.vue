@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { supabase } from '@/supabase';
 import {ref} from "@vue/reactivity";
 import card from "@/components/card.vue";
 import { useRouter } from "vue-router";
@@ -10,7 +11,7 @@ const props = defineProps(["id"]);
 if (props.id) {
     // On charge les données de la maison
     let { data, error } = await supabase
-        .from("maison")
+        .from("Maison")
         .select("*")
         .eq("id", props.id);
     if (error) console.log("n'a pas pu charger le table Maison :", error);
