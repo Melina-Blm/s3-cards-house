@@ -1,9 +1,7 @@
 <template>
+
   <nav>
-    <h4 class="text-xl">
-      <Bars3Icon class="inline-block h-5 w-5 text-blue-500" />
-      menu (dans <code class="font-mono">/src/App.vue</code>)
-    </h4>
+ 
     <ul>
       <li>
         <router-link class="text-red-600 underline" to="/">
@@ -32,6 +30,16 @@
         </router-link>
       </li>
       <li>
+        <router-link class="text-gray-800 underline" to="/offre/1">
+          <h2>Offre n°1</h2>
+        </router-link>
+      </li>
+      <li>
+        <router-link class="text-gray-800 underline" to="/offre/2">
+          <h2>Offre n°2</h2>
+        </router-link>
+      </li>
+      <li>
         <router-link class="text-gray-800 underline" to="/liste-supabase">
           <h2>Liste supabase</h2>
         </router-link>
@@ -44,6 +52,11 @@
       <li>
         <router-link class="text-gray-800 underline" to="/edit/id">
           <h2>Lien vers edit</h2>
+        </router-link>
+      </li>
+      <li>
+        <router-link class="text-gray-800 underline" to="/test">
+          <h2>Lien vers test</h2>
         </router-link>
       </li>
 

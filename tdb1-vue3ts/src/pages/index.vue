@@ -1,7 +1,7 @@
 <template>
   <section>
-    <h1 class="text-2xl">
-      Bonjour<code class="font-mono text-base">/src/pages/index.vue</code>
+    <h1 class="text-2xl text-center">
+      Exercice de TP & TD (Intégration Formulaire) <br> Mélina Bouchelleghem TDB
     </h1>
   </section>
 </template>
