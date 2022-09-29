@@ -1,8 +1,32 @@
 <script setup lang="ts">
 import {ref} from "@vue/reactivity";
 import card from "@/components/card.vue";
+import { useRouter } from "vue-router";
+
+const router = useRouter ();
 
 const maison = ref ({imgMaison:"/maison6.jpg"});
+const props = defineProps(["id"]);
+if (props.id) {
+    // On charge les données de la maison
+    let { data, error } = await supabase
+        .from("maison")
+        .select("*")
+        .eq("id", props.id);
+    if (error) console.log("n'a pas pu charger le table Maison :", error);
+    else maison.value = (data as any[])[0];
+}
+
+
+async function upsertMaison(dataForm, node) {
+    const { data, error } = await supabase.from("Maison").upsert(dataForm);
+    if (error || !data) node.setErrors([error?.message])
+    else {
+        node.setErrors([]);
+        router.push({ name: "edit-id", params: { id: data[0].id } });
+    }
+}
+
 </script>
 <template>
     <div class="flex flex-row gap-10 items-center flex-wrap">

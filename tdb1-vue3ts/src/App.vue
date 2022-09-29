@@ -41,6 +41,12 @@
           <h2>Authentification</h2>
         </router-link>
       </li>
+      <li>
+        <router-link class="text-gray-800 underline" to="/edit/id">
+          <h2>Lien vers edit</h2>
+        </router-link>
+      </li>
+
 
     </ul>
   </nav>
