@@ -12,33 +12,33 @@
         </router-link>
       </li>
       <li>
-        <router-link class="text-red-300 underline" to="/simple">
-          <h2>lien vers la Page Simple avec composant</h2>
+        <router-link class="text-gray-800 underline" to="/simple">
+          <h2>Liste simple avec composant</h2>
         </router-link>
       </li>
       <li>
-        <router-link class="text-red-300 underline" to="/liste">
-          <h2>lien vers la Page Liste avec tableaux d'objets</h2>
+        <router-link class="text-gray-800 underline" to="/liste">
+          <h2>Liste avec tableaux d'objets</h2>
         </router-link>
       </li>
       <li>
-        <router-link class="text-red-300 underline" to="/liste-fetch">
-          <h2>lien vers la Page Liste-fetch (maisons.jsons)</h2>
+        <router-link class="text-gray-800 underline" to="/liste-fetch">
+          <h2>Liste-fetch </h2>
         </router-link>
       </li>
       <li>
-        <router-link class="text-red-300 underline" to="/edit/new">
-          <h2>lien vers la page new</h2>
+        <router-link class="text-gray-800 underline" to="/edit/new">
+          <h2>Page new</h2>
         </router-link>
       </li>
       <li>
-        <router-link class="text-red-300 underline" to="/liste-supabase">
-          <h2>lien vers liste supabase</h2>
+        <router-link class="text-gray-800 underline" to="/liste-supabase">
+          <h2>Liste supabase</h2>
         </router-link>
       </li>
       <li>
-        <router-link class="text-red-300 underline" to="/login-logout">
-          <h2>lien vers login</h2>
+        <router-link class="text-gray-800 underline" to="/login-logout">
+          <h2>Authentification</h2>
         </router-link>
       </li>
 

@@ -20,7 +20,6 @@ let { data: Maison, error } = await supabase
   .select('*')
 
   console.log("maison : " ,Maison);
-  
 
 
 
