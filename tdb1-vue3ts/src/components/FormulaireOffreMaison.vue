@@ -11,13 +11,12 @@ const props = defineProps(["id"]);
 if (props.id) {
     // On charge les données de la maison
     let { data, error } = await supabase
-        .from("Maison")
-        .select("*")
-        .eq("id", props.id);
+    .from("Maison")
+    .select("*")
+    .eq("id", props.id);
     if (error) console.log("n'a pas pu charger le table Maison :", error);
     else maison.value = (data as any[])[0];
 }
-
 
 async function upsertMaison(dataForm, node) {
     const { data, error } = await supabase.from("Maison").upsert(dataForm);
@@ -28,6 +27,7 @@ async function upsertMaison(dataForm, node) {
     }
 }
 
+
 </script>
 <template>
     <div class="flex flex-row gap-10 items-center flex-wrap">
@@ -36,7 +36,7 @@ async function upsertMaison(dataForm, node) {
             <card v-bind="maison"/>
         </div>
         <div class=" flex flex-col bg-slate-100 p-6 rounded-lg drop-shadow-lg">
-            <FormKit type="form" v-model="maison" :config="{
+            <FormKit type="form" v-model="maison" @submit="upsertMaison" :config="{
                 classes: {
                     input :'mb-5 p-1 rounded border-indigo-300 border hover:border-indigo-500 drop-shadow-lg',
                     label : 'text-gray-600 font-semibold',
@@ -46,11 +46,13 @@ async function upsertMaison(dataForm, node) {
 
    
                 <FormKit name="nomMaison" label="Nom de l'offre "/>
-                <FormKit name="prixMaison" label="Prix de l'offre" type="number"/>
-                <FormKit name="favoris" label="Mettre en favoris" type="checkbox" wrapper-class="flex"/>
+                <FormKit name="adresseMaison" label="Description"/>
+                <h2 class="text-gray-600 font-semibold">Prix de l'offre</h2>
+                <FormKit name="prixMaison" label="" type="number"/>
+            
                 <FormKit name="nbrSDB" label="Nombre de salle de bains" type="number"/>        
                 <FormKit name="surfaceMaison" label="Superficie m²" type="number"/>   
-                <FormKit name="adresseMaison" label="Description"/>
+          
                  
 
                 </FormKit>

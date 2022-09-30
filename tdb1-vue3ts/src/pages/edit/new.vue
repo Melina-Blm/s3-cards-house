@@ -8,8 +8,7 @@ import FormulaireOffreMaison from "../../components/FormulaireOffreMaison.vue";
 
 <template>
 
-    <FormulaireOffreMaison></FormulaireOffreMaison>
-
+    <FormulaireOffreMaison/>
 
     
     

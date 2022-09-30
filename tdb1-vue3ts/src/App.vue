@@ -55,10 +55,11 @@
         </router-link>
       </li>
       <li>
-        <router-link class="text-gray-800 underline" to="/test">
-          <h2>Lien vers test</h2>
+        <router-link class="text-gray-800 underline" to="/quartier/">
+          <h2>Lien vers quartier</h2>
         </router-link>
       </li>
+   
 
 
     </ul>
