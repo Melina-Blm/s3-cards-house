@@ -17,8 +17,10 @@
           {{ quartiercommune.libelle_quartier }}
         </li>
       </ul>
-
-      <Disclosure v-for="(liste_Quartier, libelle_commune) in groupBy(
+ 
+    
+ 
+      <Disclosure v-for="(listeQuartier, libelle_commune) in groupBy(
       data,
       'libelle_commune'
     )"
@@ -27,14 +29,20 @@
 
     <DisclosurePanel>
       <li
-  v-for="quartier in liste_Quartier"
+  v-for="quartier in listeQuartier"
   :key="quartier.codeQuartier">
+  <RouterLink
+  :to="{
+    name: 'quartier-id',
+    params: { id: quartier.codeQuartier },
+  }"
+>{{ quartier.libelle_quartier }}</RouterLink>
 
 
 </li>
     </DisclosurePanel>
       </Disclosure>
-</section>
 
 
+    </section>
   </template>
