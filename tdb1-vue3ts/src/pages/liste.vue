@@ -1,5 +1,5 @@
 <template>
-    <div class="p-2 flex">
+    <div class="p-2">
         <h1 class="text-xl">Page Liste avec tableaux</h1>
         <div v-for="maisons in maisons" :key="maisons.nom">
             <card class="w-96" v-bind="maisons" />

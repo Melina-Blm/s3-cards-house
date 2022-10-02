@@ -13,7 +13,7 @@ if (props.id) {
     let { data, error } = await supabase
     .from("Maison")
     .select("*")
-    .eq("id", props.id);
+    .eq("id_maison", props.id);
     if (error) console.log("n'a pas pu charger le table Maison :", error);
     else maison.value = (data as any[])[0];
 }
@@ -30,7 +30,7 @@ async function upsertMaison(dataForm, node) {
 
 </script>
 <template>
-    <div class="flex flex-row gap-10 items-center flex-wrap">
+    <div class="flex flex-row  gap-10 items-center flex-wrap">
         <div class="p-2 w-96">
             <h2 class="text-2xl"> Résultat (Prévisualisation)</h2>
             <card v-bind="maison"/>
